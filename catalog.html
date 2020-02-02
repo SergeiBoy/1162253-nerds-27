@@ -11,14 +11,14 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-дизайн студии «Нёрдс»">
         </a>
         <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
-          <li><a href="">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
         <ul>
           <li>
-            <a href="">Корзина</a>
+            <a href="#">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -31,69 +31,74 @@
         Будет разработана позже.
       </section>
 
-      <form action="" method="post">
-        <h2>Сетка</h2>
-          <label><input type="radio" name="grid" value="adaptive">Адаптивная<label>
-          <label><input type="radio" name="grid" value="fixed">Фиксированная<label>
-          <label><input type="radio" name="grid" value="rubber">Резиновая<label>
-        <h2>Особенности</h2>
-          <label><input type="checkbox" name="feature_slider" value="slider">Слайдер<label>
-          <label><input type="checkbox" name="feature_advantages" value="advantages">Блок преимуществ<label>
-          <label><input type="checkbox" name="feature_news" value="news">Новости<label>
-          <label><input type="checkbox" name="feature_gallery" value="gallery">Галерея<label>
-          <label><input type="checkbox" name="feature_basket" value="basket">Корзина<label>
-        <input type="submit" value="ПОКАЗАТЬ">
+      <form action="catalog.html" method="get">
+        <h2 class="visually-hidden">Фильтр шаблонов сайтов</h2>
+        <h3>Сетка</h3>
+        <ul>
+          <li><label><input type="radio" name="grid" value="adaptive" checked>Адаптивная<label></li>
+          <li><label><input type="radio" name="grid" value="fixed">Фиксированная<label></li>
+          <li><label><input type="radio" name="grid" value="rubber">Резиновая<label></li>
+        </ul>
+        <h3>Особенности</h3>
+        <ul>
+          <li><label><input type="checkbox" name="feature_slider" value="slider" checked>Слайдер<label></li>
+          <li><label><input type="checkbox" name="feature_advantages" value="advantages">Блок преимуществ<label></li>
+          <li><label><input type="checkbox" name="feature_news" value="news" checked>Новости<label></li>
+          <li><label><input type="checkbox" name="feature_gallery" value="gallery">Галерея<label></li>
+          <li><label><input type="checkbox" name="feature_basket" value="basket">Корзина<label></li>
+        </ul>
+        <button type="submit">Показать</button>
       </form>
 
       <section>
-        <h2>Перечень шаблонов</h2>
+        <h2 class="visually-hidden">Перечень шаблонов сайтов</h2>
         <ul>
           <li>
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona">
             <div>
-              <h3><a href="">Sedona</a></h3>
+              <h3><a href="#">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
-              <button type="button">9 900 РУБ.</button>
+              <a href="#">9 900 РУБ.</a>
             </div>
           </li> 
           <li>
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
+            <img src="img/img-pink.jpg" width="360" height="576" alt="Сайт Pink App">
             <div>
-              <h3><a href="">Pink App</a></h3>
+              <h3><a href="#">Pink App</a></h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <button type="button">9 900 РУБ.</button>
+              <a href="#">9 900 РУБ.</a>
             </div>
           </li>
           <li>
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт Barbershop">
             <div>
-              <h3><a href="">Barbershop</a></h3>
+              <h3><a href="#">Barbershop</a></h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <button type="button">9 900 РУБ.</button>
+              <a href="#">9 900 РУБ.</a>
             </div>
           </li>
           <li>
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+            <img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт Mishka">
             <div>
-              <h3><a href="">Mishka</a></h3>
+              <h3><a href="#">Mishka</a></h3>
               <p>Интернет-магазин вязаных игрушек</p>
-              <button type="button">9 900 РУБ.</button>
+              <a href="#">9 900 РУБ.</a>
             </div>
           </li>
           <li>
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
+            <img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт A Plus">
             <div>
-              <h3><a href="">A Plus</a></h3>
+              <h3><a href="#">A Plus</a></h3>
               <p>Лендинг курсов повышения квалификации</p>
-              <button type="button">9 900 РУБ.</button>
+              <a href="#">9 900 РУБ.</a>
             </div>
           </li>
           <li>
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
+            <img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт Кваст">
             <div>
-              <h3><a href="">Кваст</a></h3>
+              <h3><a href="#">Кваст</a></h3>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <button type="button">9 900 РУБ.</button>
+              <a href="#">9 900 РУБ.</a>
             </div>
           </li>
         </ul>
@@ -105,12 +110,23 @@
     </main>
     <footer>
       <ul>
-        <li><a href="">В контакте</a></li>
-        <li><a href="">Фейсбук</a></li>
-        <li><a href="">Инстаграм</a></li>
+        <li><a href="#">В контакте</a></li>
+        <li><a href="#">Фейсбук</a></li>
+        <li><a href="#">Инстаграм</a></li>
       </ul>
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
+
+    <section>
+      <h2>Напишите нам</h2>
+      <button type="button">Закрыть</button>
+      <form action="index.html" method="post">
+        <label>Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия"></label>
+        <label>Ваш e-mail:<input type="email" name="email" placeholder="email@example.com"></label>
+        <label>Текст письма:<textarea name="text">В свободной форме</textarea></label>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>

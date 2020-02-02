@@ -11,50 +11,47 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-дизайн студии «Нёрдс»">
         </a>
         <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
         <ul>
           <li>
-            <a href="">Корзина</a>
+            <a href="#">Корзина</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
 
-      <h1>Веб-дизайн студия «Нёрдс»</h1>
+      <h1 class="visually-hidden">Веб-дизайн студия «Нёрдс»</h1>
 
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         Здесь будет слайдер
       </section>
 
       <section>
-        <h2>Сделайте заказ!</h2>
+        <h2 class="visually-hidden">Сделайте заказ!</h2>
         <ul>
           <li>
-            <img src="img/advantage-picture-red.png" width="300" height="146" alt="Веб-сайты">
             <h3>Веб-сайты</h3>
-            <p>Мир никогда не будет прежним<br>
-               после того, как увидит ваш сайт!</p>
-            <a href="">Заказать</a>
+            <img src="img/advantage-picture-red.png" width="300" height="146" alt="Ноутбук с веб-сайтом на экране">
+            <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+            <a href="#">Заказать</a>
           </li>
           <li>
-            <img src="img/advantage-picture-green.png" width="300" height="146" alt="Приложения">
             <h3>Приложения</h3>
-            <p>Покорите топ-10 приложений в<br>
-               AppStore и Google Play</p>
-            <a href="">Заказать</a>
+            <img src="img/advantage-picture-green.png" width="300" height="146" alt="Два мобильных телефона">
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#">Заказать</a>
           </li>
           <li>
-            <img src="img/advantage-picture-yellow.png" width="300" height="146" alt="Презентации">
             <h3>Презентации</h3>
-            <p>Вы даже не подозреваете,<br>
-               насколько вы изумительны!</p>
-            <a href="">Заказать</a>
+            <img src="img/advantage-picture-yellow.png" width="300" height="146" alt="Экран с графиком">
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#">Заказать</a>
           </li>
         </ul>
       </section>
@@ -65,12 +62,23 @@
     </main>
     <footer>
       <ul>
-        <li><a href="">В контакте</a></li>
-        <li><a href="">Фейсбук</a></li>
-        <li><a href="">Инстаграм</a></li>
+        <li><a href="#">В контакте</a></li>
+        <li><a href="#">Фейсбук</a></li>
+        <li><a href="#">Инстаграм</a></li>
       </ul>
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
+
+    <section>
+      <h2>Напишите нам</h2>
+      <button type="button">Закрыть</button>
+      <form action="index.html" method="post">
+        <label>Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия"></label>
+        <label>Ваш e-mail:<input type="email" name="email" placeholder="email@example.com"></label>
+        <label>Текст письма:<textarea name="text">В свободной форме</textarea></label>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
