@@ -16,7 +16,7 @@ a {
   color: black;
 }
 
-.main-navigation {
+.main-header {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -24,11 +24,23 @@ a {
   background-color: #eeeeee;
 }
 
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+  padding-top: 83px;
+}
+
 .site-navigation,
 .user-navigation,
+.landing .landing-list,
 .filter-grid,
 .filter-feature,
+.website-templates .catalog,
 .social-icons {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -44,10 +56,39 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-h1.main-title-shop {
+.wrapper-main-title-shop {
+  background-color: #eeeeee;
+}
+
+.main-title-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1160px;
+  height: 250px;
+  margin: 0 auto;
+
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+}
+
+.wrapper-catalog {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.website-templates .catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 760px;
+}
+
+.catalog li {
+  margin-bottom: 30px;
 }
 
 .landing h3 {
@@ -71,44 +112,58 @@ h1.main-title-shop {
   color: #283136;
 }
 
-.filter label:disabled {
+input:disabled + label {
   color: rgba(40, 49, 54, 0.3);
 }
 
-.filter button {
+.filter .filter-button {
   width: 260px;
   height: 50px;
   background-color: #eeeeee;
   border-width: 0;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
 }
 
-.filter button:hover,
-.filter button:focus {
+.filter .filter-button:hover,
+.filter .filter-button:focus {
   background-color: #dfdfdf;
 }
 
-.filter button:active {
+.filter .filter-button:active {
   color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
 }
 
+.landing .landing-list {
+  display: flex;
+  justify-content: flex-start;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.landing-list li {
+  margin-right: 100px;
+}
 
 .landing p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
   color: #283136;
+
+  width: 250px;
 }
 
-a.order {
+.landing .button-order {
   display: block;
   width: 160px;
   height: 50px;
+
   font-size: 16px;
   line-height: 50px;
   font-weight: 500;
@@ -116,46 +171,62 @@ a.order {
   text-align: center;
 }
 
-a.red {
+.landing .button-red {
   background-color: #fb565a;
 }
 
-a.red:hover,
-a.red:focus {
+.landing .button-red:hover,
+.landing .button-red:focus {
   background-color: #e74246;
 }
 
-a.red:active {
+.landing .button-red:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
 }
 
-a.green {
+.landing .button-green {
   background-color: #00ca74;
 }
 
-a.green:hover,
-a.green:focus {
+.landing .button-green:hover,
+.landing .button-green:focus {
   background-color: #00bc6c;
 }
 
-a.green:active {
+.landing .button-green:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #00aa62;
 }
 
-a.yellow {
+.landing .button-yellow {
   background-color: #efc84a;
 }
 
-a.yellow:hover,
-a.yellow:focus {
+.landing .button-yellow:hover,
+.landing .button-yellow:focus {
   background-color: #eab534;
 }
 
-a.yellow:active {
+.landing .button-yellow:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #e5a722;
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin-right: 140px;
 }
 
 .social-icons a {
@@ -164,6 +235,23 @@ a.yellow:active {
   height: 79px;
   border-radius: 50%;
   background-color: #e1e1e1;
+
+  font-size: 0;
+
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.social-icons .vkontakte {
+  background-image: url("../img/vk-icon.svg");
+}
+
+.social-icons .facebook {
+  background-image: url("../img/fb-icon.svg");
+}
+
+.social-icons .instagram {
+  background-image: url("../img/insta-icon.svg");
 }
 
 .social-icons a:hover,
@@ -175,16 +263,25 @@ a.yellow:active {
   background-color: #d7373b;
 }
 
-.main-footer p:first-of-type {
+.footer-slogan p:first-child {
   font-size: 36px;
   line-height: 36px;
   font-weight: 500;
+
+  margin-bottom: 6px;
+  margin-top: 10px;
 }
 
-.main-footer p:nth-of-type(2) {
+.footer-slogan p:nth-child(2) {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
 }
 
-
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}

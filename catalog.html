@@ -28,108 +28,112 @@
     </header>
     <main class="container">
 
-      <h1 class="main-title-shop">Магазин готовых шаблонов</h1>
+      <div class="wrapper-main-title-shop">
+        <h1 class="main-title-shop">Магазин готовых шаблонов</h1>
+      </div>
 
       <section>
         Будет разработана позже.
       </section>
 
-      <form class="filter" action="catalog.html" method="get">
-        <h2 class="visually-hidden">Фильтр шаблонов сайтов</h2>
-        <h3>Сетка</h3>
-        <ul class="filter-grid">
-          <li>
-            <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
-            <label for="filter-adaptive">Адаптивная</label>
-          </li>
-          <li>
-            <input type="radio" name="grid" value="fixed" id="filter-fixed">
-            <label for="filter-fixed">Фиксированная</label>
-          </li>
-          <li>
-            <input type="radio" name="grid" value="rubber" id="filter-rubber">
-            <label for="filter-rubber">Резиновая</label>
-          </li>
-        </ul>
-        <h3>Особенности</h3>
-        <ul class="filter-feature">
-          <li>
-            <input type="checkbox" name="feature-slider" value="slider" id="filter-slider" checked>
-            <label for="filter-slider">Слайдер</label>
-          </li>
-          <li>
-            <input type="checkbox" name="feature-advantages" value="advantages" id="filter-advantages">
-            <label for="filter-advantages">Блок преимуществ</label>
-          </li>
-          <li>
-            <input type="checkbox" name="feature-news" value="news" id="filter-news" checked>
-            <label for="filter-news">Новости</label>
-          </li>
-          <li>
-            <input type="checkbox" name="feature-gallery" value="gallery" id="filter-gallery">
-            <label for="filter-gallery">Галерея</label>
-          </li>
-          <li>
-            <input type="checkbox" name="feature-basket" value="basket" id="filter-basket">
-            <label for="filter-basket">Корзина</label>
-          </li>
-        </ul>
-        <button type="submit">Показать</button>
-      </form>
+      <div class="wrapper-catalog">
+        <form class="filter" action="catalog.html" method="get">
+          <h2 class="visually-hidden">Фильтр шаблонов сайтов</h2>
+          <h3>Сетка</h3>
+          <ul class="filter-grid">
+            <li>
+              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" name="grid" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
+            </li>
+          </ul>
+          <h3>Особенности</h3>
+          <ul class="filter-feature">
+            <li>
+              <input type="checkbox" name="feature-slider" value="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" name="feature-advantages" value="advantages" id="filter-advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" name="feature-news" value="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="feature-gallery" value="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="feature-basket" value="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+          <button class="filter-button" type="submit">Показать</button>
+        </form>
 
-      <section class="website-templates">
-        <h2 class="visually-hidden">Перечень шаблонов сайтов</h2>
-        <ul>
-          <li>
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona">
-            <div class="modal-order">
-              <h3><a href="#">Sedona</a></h3>
-              <p>Информационный сайт для туристов</p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </li> 
-          <li>
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Сайт Pink App">
-            <div class="modal-order">
-              <h3><a href="#">Pink App</a></h3>
-              <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </li>
-          <li>
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт Barbershop">
-            <div class="modal-order">
-              <h3><a href="#">Barbershop</a></h3>
-              <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </li>
-          <li>
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт Mishka">
-            <div class="modal-order">
-              <h3><a href="#">Mishka</a></h3>
-              <p>Интернет-магазин вязаных игрушек</p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </li>
-          <li>
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт A Plus">
-            <div class="modal-order">
-              <h3><a href="#">A Plus</a></h3>
-              <p>Лендинг курсов повышения квалификации</p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </li>
-          <li>
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт Кваст">
-            <div class="modal-order">
-              <h3><a href="#">Кваст</a></h3>
-              <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="#">9 900 РУБ.</a>
-            </div>
-          </li>
-        </ul>
-      </section>
+        <section class="website-templates">
+          <h2 class="visually-hidden">Перечень шаблонов сайтов</h2>
+          <ul class="catalog">
+            <li>
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona">
+              <div class="modal-order">
+                <h3><a href="#">Sedona</a></h3>
+                <p>Информационный сайт для туристов</p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </li> 
+            <li>
+              <img src="img/img-pink.jpg" width="360" height="576" alt="Сайт Pink App">
+              <div class="modal-order">
+                <h3><a href="#">Pink App</a></h3>
+                <p>Продуктовый лендинг приложения для iOS и Android</p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт Barbershop">
+              <div class="modal-order">
+                <h3><a href="#">Barbershop</a></h3>
+                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт Mishka">
+              <div class="modal-order">
+                <h3><a href="#">Mishka</a></h3>
+                <p>Интернет-магазин вязаных игрушек</p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт A Plus">
+              <div class="modal-order">
+                <h3><a href="#">A Plus</a></h3>
+                <p>Лендинг курсов повышения квалификации</p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </li>
+            <li>
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт Кваст">
+              <div class="modal-order">
+                <h3><a href="#">Кваст</a></h3>
+                <p>Промо-сайт производителя крафтового кваса</p>
+                <a href="#">9 900 РУБ.</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
 
       <section>
          Будет разработана позднее.
@@ -137,12 +141,14 @@
     </main>
     <footer class="main-footer">
       <ul class="social-icons">
-        <li><a href="#">В контакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+        <li><a class="vkontakte" href="#">В контакте</a></li>
+        <li><a class="facebook" href="#">Фейсбук</a></li>
+        <li><a class="instagram" href="#">Инстаграм</a></li>
       </ul>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-slogan">
+	    <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
 
     <section class="modal-message">
