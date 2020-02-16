@@ -16,7 +16,7 @@
         <ul class="site-navigation">
           <li><a href="index.html">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a class="active" href="#">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -39,41 +39,41 @@
       <div class="wrapper-catalog">
         <form class="filter" action="catalog.html" method="get">
           <h2 class="visually-hidden">Фильтр шаблонов сайтов</h2>
-          <h3>Сетка</h3>
+          <h3>Сетка:</h3>
           <ul class="filter-grid">
-            <li>
-              <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+            <li class="radio">
+              <input class="radio-input" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
-            <li>
-              <input type="radio" name="grid" value="fixed" id="filter-fixed">
+            <li class="radio">
+              <input class="radio-input" type="radio" name="grid" value="fixed" id="filter-fixed">
               <label for="filter-fixed">Фиксированная</label>
             </li>
-            <li>
-              <input type="radio" name="grid" value="rubber" id="filter-rubber">
+            <li class="radio">
+              <input class="radio-input" type="radio" name="grid" value="rubber" id="filter-rubber">
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
-          <h3>Особенности</h3>
+          <h3>Особенности:</h3>
           <ul class="filter-feature">
-            <li>
-              <input type="checkbox" name="feature-slider" value="slider" id="filter-slider" checked>
+            <li class="checkbox">
+              <input class="checkbox-input" type="checkbox" name="feature-slider" value="slider" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
             </li>
-            <li>
-              <input type="checkbox" name="feature-advantages" value="advantages" id="filter-advantages">
+            <li class="checkbox">
+              <input class="checkbox-input" type="checkbox" name="feature-advantages" value="advantages" id="filter-advantages">
               <label for="filter-advantages">Блок преимуществ</label>
             </li>
-            <li>
-              <input type="checkbox" name="feature-news" value="news" id="filter-news" checked>
+            <li class="checkbox">
+              <input class="checkbox-input" type="checkbox" name="feature-news" value="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
-            <li>
-              <input type="checkbox" name="feature-gallery" value="gallery" id="filter-gallery">
+            <li class="checkbox">
+              <input class="checkbox-input" type="checkbox" name="feature-gallery" value="gallery" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
-            <li>
-              <input type="checkbox" name="feature-basket" value="basket" id="filter-basket">
+            <li class="checkbox">
+              <input class="checkbox-input" type="checkbox" name="feature-basket" value="basket" id="filter-basket">
               <label for="filter-basket">Корзина</label>
             </li>
           </ul>
@@ -83,50 +83,50 @@
         <section class="website-templates">
           <h2 class="visually-hidden">Перечень шаблонов сайтов</h2>
           <ul class="catalog">
-            <li>
+            <li class="catalog-item">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona">
               <div class="modal-order">
-                <h3><a href="#">Sedona</a></h3>
-                <p>Информационный сайт для туристов</p>
+                <h3><a class="website-title" href="#">Sedona</a></h3>
+                <p class="mini">Информационный сайт для туристов</p>
                 <a href="#">9 900 РУБ.</a>
               </div>
             </li> 
-            <li>
+            <li class="catalog-item">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Сайт Pink App">
               <div class="modal-order">
-                <h3><a href="#">Pink App</a></h3>
+                <h3><a class="website-title" href="#">Pink App</a></h3>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
                 <a href="#">9 900 РУБ.</a>
               </div>
             </li>
-            <li>
+            <li class="catalog-item">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт Barbershop">
               <div class="modal-order">
-                <h3><a href="#">Barbershop</a></h3>
-                <p>Сайт салона красоты. Для мужчин, да.</p>
+                <h3><a class="website-title" href="#">Barbershop</a></h3>
+                <p class="mini">Сайт салона красоты. Для мужчин, да.</p>
                 <a href="#">9 900 РУБ.</a>
               </div>
             </li>
-            <li>
+            <li class="catalog-item">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт Mishka">
               <div class="modal-order">
-                <h3><a href="#">Mishka</a></h3>
-                <p>Интернет-магазин вязаных игрушек</p>
+                <h3><a class="website-title" href="#">Mishka</a></h3>
+                <p class="mini">Интернет-магазин вязаных игрушек</p>
                 <a href="#">9 900 РУБ.</a>
               </div>
             </li>
-            <li>
+            <li class="catalog-item">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт A Plus">
               <div class="modal-order">
-                <h3><a href="#">A Plus</a></h3>
+                <h3><a class="website-title" href="#">A Plus</a></h3>
                 <p>Лендинг курсов повышения квалификации</p>
                 <a href="#">9 900 РУБ.</a>
               </div>
             </li>
-            <li>
+            <li class="catalog-item">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт Кваст">
               <div class="modal-order">
-                <h3><a href="#">Кваст</a></h3>
+                <h3><a class="website-title" href="#">Кваст</a></h3>
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <a href="#">9 900 РУБ.</a>
               </div>
@@ -152,23 +152,25 @@
     </footer>
 
     <section class="modal-message">
-      <h2>Напишите нам</h2>
-      <button type="button">Закрыть</button>
-      <form action="index.html" method="post">
-        <p>
-          <label for="message-name">Ваше имя:</label>
-          <input type="text" name="name" placeholder="Имя Фамилия" id="message-name">
-        </p>
-        <p>
-          <label for="message-email">Ваш e-mail:</label>
-          <input type="email" name="email" placeholder="email@example.com" id="message-email">
-        </p>
-        <p>
-          <label for="message-text">Текст письма:</label>
-          <textarea name="text" id="message-text">В свободной форме</textarea>
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
+      <div class="modal-wrapper">
+        <h2>Напишите нам</h2>
+        <button class="close-cross" type="button">Закрыть</button>
+        <form class="message-form" action="index.html" method="post">
+          <p>
+            <label for="message-name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя Фамилия" id="message-name">
+          </p>
+          <p>
+            <label for="message-email">Ваш e-mail:</label>
+            <input type="email" name="email" placeholder="email@example.com" id="message-email">
+          </p>
+          <p>
+            <label for="message-text">Текст письма:</label>
+            <textarea name="text" id="message-text" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>

@@ -14,7 +14,7 @@
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-дизайн студии «Нёрдс»">
         </a>
         <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
+          <li><a class="active" href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
@@ -59,7 +59,7 @@
         </ul>
       </section>
 
-      <section>
+      <section style="height: 1000px;">
         Будет разработана в дальнейшем.
       </section>
     </main>
@@ -76,23 +76,25 @@
     </footer>
 
     <section class="modal-message">
-      <h2>Напишите нам</h2>
-      <button type="button">Закрыть</button>
-      <form action="index.html" method="post">
-        <p>
-          <label for="message-name">Ваше имя:</label>
-          <input type="text" name="name" placeholder="Имя Фамилия" id="message-name">
-        </p>
-        <p>
-          <label for="message-email">Ваш e-mail:</label>
-          <input type="email" name="email" placeholder="email@example.com" id="message-email">
-        </p>
-        <p>
-          <label for="message-text">Текст письма:</label>
-          <textarea name="text" id="message-text">В свободной форме</textarea>
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
+      <div class="modal-wrapper">
+        <h2>Напишите нам</h2>
+        <button class="close-cross" type="button">Закрыть</button>
+        <form class="message-form" action="index.html" method="post">
+          <p>
+            <label for="message-name">Ваше имя:</label>
+            <input type="text" name="name" placeholder="Имя Фамилия" id="message-name">
+          </p>
+          <p>
+            <label for="message-email">Ваш e-mail:</label>
+            <input type="email" name="email" placeholder="email@example.com" id="message-email">
+          </p>
+          <p>
+            <label for="message-text">Текст письма:</label>
+            <textarea name="text" id="message-text" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
