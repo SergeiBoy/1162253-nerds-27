@@ -150,12 +150,25 @@ img {
 
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 
   line-height: 0px;
 }
 
 .catalog-item::before {
-  content: url("../img/browser.svg");
+  content: "";
+  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  
+  width: 360px;
+  height: 40px;
+
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
   opacity: 0.12;
 }
 
@@ -294,31 +307,45 @@ input:disabled + label {
 }
 
 .radio-input + label::before {
-  content: url("../img/radio-off.svg");
-
+  content: "";
+  
   position: absolute;
-  left: 0;
-  vertical-align: middle;
+  top: 0px;
+  left: 0px;
+  
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
   opacity: 0.4;
 }
 
 .checkbox-input + label::before {
-  content: url("../img/checkbox-off.svg");
-
+  content: "";
+  
   position: absolute;
-  left: 0;
-  vertical-align: middle;
+  top: 0px;
+  left: 0px;
+  
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
   opacity: 0.4;
 }
 
 .radio-input:checked + label::before {
-  content: url("../img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
 }
 
 .checkbox-input:checked + label::before {
-  content: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
 }
 
 input:enabled + label:hover::before,
@@ -459,10 +486,13 @@ input:disabled + label::before {
   width: 273px;
 }
 
-.social-icons a {
+.social-icons li {
+  position: relative;
   margin-right: 12px;
   margin-bottom: 12px;
+}
 
+.social-icons a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -475,29 +505,43 @@ input:disabled + label::before {
   background-color: #e1e1e1;
 }
 
-.social-icons a::before {
-  display: block;
-}
-
 .vkontakte::before {
-  content: url("../img/vk-icon.svg");
-
+  content: "";
+  
+  display: block;
+  
   width: 26px;
   height: 15px;
+
+  background-image: url("../img/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .facebook::before {
-  content: url("../img/fb-icon.svg");
-
+  content: "";
+  
+  display: block;
+  
   width: 12px;
   height: 22px;
+
+  background-image: url("../img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .instagram::before {
-  content: url("../img/insta-icon.svg");
-
+  content: "";
+  
+  display: block;
+  
   width: 21px;
   height: 21px;
+
+  background-image: url("../img/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .social-icons a:active::before {
