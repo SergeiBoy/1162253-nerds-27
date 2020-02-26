@@ -38,6 +38,8 @@ close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-message-show");
   popup.classList.remove("modal-message-error");
+  personName.required = false;
+  email.required = false;
 });
 
 form.addEventListener("submit", function (evt) {
@@ -66,6 +68,8 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("modal-message-show")) {
       popup.classList.remove("modal-message-show");
       popup.classList.remove("modal-message-error");
+      personName.required = false;
+      email.required = false;
     }
   }
 });
