@@ -23,7 +23,9 @@ img {
 .filter-grid,
 .filter-feature,
 .website-templates .catalog,
-.social-icons {
+.social-icons,
+.we-do-orders,
+.list-companies-logo {
   padding: 0;
   margin: 0;
 
@@ -124,6 +126,7 @@ img {
 
 .slider .slider-wrapper-background {
   background-color: #eeeeee;
+  min-height: 400px;
 }
 
 .slider .slider-wrapper-centering {
@@ -264,15 +267,9 @@ img {
 
 /* Лэндинг на главной странице: */
 
-.landing h3 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .landing .landing-list {
   margin: 0 auto;
+  margin-top: 71px;
 
   display: flex;
   justify-content: flex-start;
@@ -283,10 +280,24 @@ img {
 .landing-list li {
   margin-right: 100px;
   margin-bottom: 80px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .landing-list li:nth-child(3n) {
   margin-right: 0px;
+}
+
+.landing h3 {
+  margin-top: 25px;
+  margin-bottom: 0px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .landing p {
@@ -294,11 +305,17 @@ img {
 
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: #283136;
 }
 
+.landing img {
+  order: -1;
+}
+
 .landing .button-order {
+  margin-top: 16px;
+
   display: block;
   width: 160px;
   height: 50px;
@@ -353,6 +370,272 @@ img {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #e5a722;
+}
+
+
+/* Краткое описание компании */
+
+.short-company-description {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  
+  border-top: 2px solid #eeeeee;
+}
+
+.text-description {
+  width: 670px;
+}
+
+.text-description h3 {
+  margin-top: 74px;
+  margin-bottom: 35px;
+
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.text-description p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+}
+
+.text-description h4 {
+  margin-top: 38px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.we-do-orders li {
+  position: relative;
+  margin-top: 24px;
+
+  padding-left: 35px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+}
+
+.we-do-orders li::before {
+  content: "";
+  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  
+  width: 25px;
+  height: 40%;
+
+  border-bottom: 2px solid #fb565a;
+}
+
+.image-numbers-description {
+  width: 360px;
+  padding-top: 40px;
+}
+
+.image-numbers-description > p {
+  margin-left: 16px;
+  margin-top: 33px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.numbers-description-wrapper {
+  display: flex;
+}
+
+.numbers-description-wrapper div {
+  width: 120px;
+}
+
+.numbers-description-wrapper p:first-child {
+  margin-top: 42px;
+  margin-bottom: 34px;
+
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
+}
+
+.numbers-description-wrapper .percent {
+  font-size: 35px;
+}
+
+.numbers-description-wrapper p:nth-child(2) {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #283136;
+}
+
+
+/* Логотипы компаний */
+
+.companies-logo {
+  margin: 0 auto;
+  margin-top: 58px;
+
+  width: 1160px;
+  min-height: 180px;
+
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.list-companies-logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-companies-logo li {
+  position: relative;
+  margin-top: 43px;
+  margin-bottom: 43px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+
+  flex-grow: 1;
+}
+
+.list-companies-logo li:nth-child(4n+1) {
+  min-width: 281px;
+}
+
+.list-companies-logo li:nth-child(4n) {
+  min-width: 279px;
+}
+
+.list-companies-logo li::after {
+  content: "";
+  
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+}
+
+.list-companies-logo li:last-child::after,
+.list-companies-logo li:nth-child(4n)::after {
+  display: none;
+}
+
+.list-companies-logo a {
+  opacity: 0.2;
+}
+
+.list-companies-logo a:hover {
+  opacity: 1;
+}
+
+.list-companies-logo a:active {
+  opacity: 0.1;
+}
+
+img[src="img/htmlacademy-logo.png"] {
+  position: relative;
+  top: 8px;
+  right: 10px;
+}
+
+img[src="img/borodinsli-logo.png"] {
+  position: relative;
+  top: 3px;
+  left: 1px;
+}
+
+img[src="img/pink-logo.png"] {
+  position: relative;
+  top: 2px;
+}
+
+img[src="img/mishka-logo.png"] {
+  position: relative;
+  top: 7px;
+  left: 10px;
+}
+
+
+
+/* Карта проезда  */
+
+.map {
+  position: relative;
+
+  margin: 0 auto;
+  margin-top: 80px;
+
+  width: 1440px;
+}
+
+.map img:nth-of-type(2) {
+  position: absolute;
+
+  top: 90px;
+  left: 820px;
+}
+
+.map div {
+  position: absolute;
+  top: 55px;
+  left: 140px;
+
+  box-sizing: border-box;
+  width: 319px;
+  min-height: 308px;
+  padding: 30px 50px;
+
+  background-color: white;
+}
+
+.map h3 {
+  margin-bottom: 24px;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.map p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.map button {
+  margin-top: 22px;
+
+  width: 219px;
+  height: 50px;
+  
+  font-size: 16px;
+  line-height: 50px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  
+  background-color: #fb565a;
+  border: 0;
 }
 
 
@@ -513,7 +796,7 @@ img {
 .filter h3 {
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -620,16 +903,15 @@ input:disabled + label {
 
 .main-footer {
   margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 70px;
+  margin-top: 65px;
+  margin-bottom: 57px;
 
   display: flex;
-  align-items: center;
   width: 1160px;
 }
 
 .social-icons {
-  margin-right: 128px;
+  margin-right: 127px;
 
   display: flex;
   flex-wrap: wrap;
@@ -699,15 +981,17 @@ input:disabled + label {
 }
 
 .footer-slogan p:first-child {
-  margin-top: 10px;
+  margin-top: 6px;
   margin-bottom: 6px;
 
   font-size: 36px;
   line-height: 36px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .footer-slogan p:nth-child(2) {
+  margin-top: 10px;
+
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -724,61 +1008,21 @@ input:disabled + label {
 
   display: none;
   flex-wrap: wrap;
-  align-items: center;
   align-content: flex-start;
   width: 960px;
   height: 590px;
   box-sizing: border-box;
-  padding: 70px 50px 70px 100px;
+  padding: 67px 50px 70px 100px;
   
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   background-color: white;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .modal-message-show {
   display: flex;
-  
+  z-index: 20;
+
   animation: bounce 0.6s;
-}
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
 }
 
 .modal-message-error {
@@ -786,7 +1030,7 @@ input:disabled + label {
 }
 
 .modal-message h2 {
-  margin: 0 440px 0 0;
+  margin: 0 439px 0 0;
 
   font-size: 45px;
   font-weight: 500;
@@ -794,6 +1038,8 @@ input:disabled + label {
 }
 
 .modal-message .close-cross {
+  margin-top: 11px;
+
   width: 21px;
   height: 21px;
 
@@ -815,7 +1061,7 @@ input:disabled + label {
 }
 
 .message-form {
-  margin-top: 20px;
+  margin-top: 25px;
 
   display: flex;
   flex-wrap: wrap;
@@ -823,11 +1069,12 @@ input:disabled + label {
 
 .message-form p:first-child {
   margin-right: 40px;
+  margin-bottom: 18px;
 }
 
 .message-form label {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
 
   font-size: 16px;
   font-weight: 700;
@@ -838,18 +1085,18 @@ input:disabled + label {
   box-sizing: border-box;
   width: 360px;
   height: 50px;
-  padding: 16px 15px;
+  padding: 10px 13px;
 
   border: 2px solid #d7dcde;
 }
 
 .message-form textarea {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   box-sizing: border-box;
   width: 760px;
   height: 118px;
-  padding: 16px 15px;
+  padding: 12px 12px;
 
   border: 2px solid #d7dcde;
   resize: none;
@@ -871,17 +1118,17 @@ input:disabled + label {
   border: 2px solid #e74246;
 }
 
-.message-form input::-moz-placeholder { color: rgba(68, 68, 68, 0.5);  }
-.message-form input::-webkit-input-placeholder { color: rgba(68, 68, 68, 0.5); }
-.message-form input:-ms-input-placeholder { color: rgba(68, 68, 68, 0.5); }
-.message-form input::-ms-input-placeholder { color: rgba(68, 68, 68, 0.5); }
-.message-form input::placeholder { color: rgba(68, 68, 68, 0.5); } 
+.message-form input::-moz-placeholder { color: rgba(68, 68, 68, 0.5); font-size: 16px; }
+.message-form input::-webkit-input-placeholder { color: rgba(68, 68, 68, 0.5); font-size: 16px; }
+.message-form input:-ms-input-placeholder { color: rgba(68, 68, 68, 0.5); font-size: 16px; }
+.message-form input::-ms-input-placeholder { color: rgba(68, 68, 68, 0.5); font-size: 16px; }
+.message-form input::placeholder { color: rgba(68, 68, 68, 0.5); font-size: 16px; } 
 
-.message-form textarea::-moz-placeholder { color: rgba(68, 68, 68, 0.5);  }
-.message-form textarea::-webkit-input-placeholder { color: rgba(68, 68, 68, 0.5); }
-.message-form textarea:-ms-input-placeholder { color: rgba(68, 68, 68, 0.5); }
-.message-form textarea::-ms-input-placeholder { color: rgba(68, 68, 68, 0.5); }
-.message-form textarea::placeholder { color: rgba(68, 68, 68, 0.5); } 
+.message-form textarea::-moz-placeholder { color: rgba(68, 68, 68, 0.5);  font-size: 16px; }
+.message-form textarea::-webkit-input-placeholder { color: rgba(68, 68, 68, 0.5); font-size: 16px; }
+.message-form textarea:-ms-input-placeholder { color: rgba(68, 68, 68, 0.5); font-size: 16px; }
+.message-form textarea::-ms-input-placeholder { color: rgba(68, 68, 68, 0.5); font-size: 16px; }
+.message-form textarea::placeholder { color: rgba(68, 68, 68, 0.5); font-size: 16px; } 
 
 .message-form input:focus::-moz-placeholder { color: #444444;  }
 .message-form input:focus::-webkit-input-placeholder { color: #444444; }
@@ -907,6 +1154,46 @@ input:disabled + label {
 
   background-color: #fb565a;
   border: 0;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 

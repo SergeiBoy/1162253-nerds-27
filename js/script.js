@@ -1,5 +1,5 @@
 
-var button = document.querySelector(".user-basket");
+var button = document.querySelector(".map button");
 
 var popup = document.querySelector(".modal-message");
 var close = popup.querySelector(".close-cross");
