@@ -22,6 +22,8 @@ try {
 
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
+  popup.classList.remove("modal-message-close");
+  popup.offsetWidth = popup.offsetWidth;
   popup.classList.add("modal-message-show");
 
   if (storageName) {
@@ -38,6 +40,8 @@ close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-message-show");
   popup.classList.remove("modal-message-error");
+  popup.offsetWidth = popup.offsetWidth;
+  popup.classList.add("modal-message-close");
   personName.required = false;
   email.required = false;
 });
@@ -68,6 +72,8 @@ window.addEventListener("keydown", function (evt) {
     if (popup.classList.contains("modal-message-show")) {
       popup.classList.remove("modal-message-show");
       popup.classList.remove("modal-message-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-message-close");
       personName.required = false;
       email.required = false;
     }
@@ -78,10 +84,10 @@ window.addEventListener("keydown", function (evt) {
 var iframe = document.querySelector(".map iframe");
 
 var width = document.documentElement.clientWidth;
-  if (width > 1440) {
-    iframe.style.width = width + 'px';
-    iframe.style.marginLeft = -(width/2) + 'px';
-  }
+if (width > 1440) {
+  iframe.style.width = width + 'px';
+  iframe.style.marginLeft = -(width/2) + 'px';
+}
 
 window.addEventListener("resize", function (evt) {
   var width = document.documentElement.clientWidth;
