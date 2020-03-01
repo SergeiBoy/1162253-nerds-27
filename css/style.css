@@ -805,7 +805,6 @@ input:disabled + label {
   justify-content: space-between;
   align-items: baseline;
 
-  width: 100%;
   min-height: 75px;
 }
 
@@ -894,11 +893,14 @@ input:disabled + label {
   width: 1160px;
 }
 
+.website-templates {
+  width: 760px;
+}
+
 .website-templates .catalog {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 760px;
 }
 
 .catalog-item {
@@ -1020,7 +1022,7 @@ input:disabled + label {
 
 .page-listing {
   margin-top: 27px;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
 
   display: flex;
   flex-wrap: wrap;
@@ -1028,6 +1030,7 @@ input:disabled + label {
 
 .page-listing a {
   margin-right: 11px;
+  margin-bottom: 11px;
 
   display: block;
   box-sizing: border-box;
@@ -1088,6 +1091,7 @@ input:disabled + label {
   position: absolute;
   top: 55px;
   left: 140px;
+  z-index: 10;
 
   box-sizing: border-box;
   width: 319px;
@@ -1126,6 +1130,13 @@ input:disabled + label {
   
   background-color: #fb565a;
   border: 0;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -720px;
 }
 
 

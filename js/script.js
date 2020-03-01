@@ -73,3 +73,22 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+
+var iframe = document.querySelector(".map iframe");
+
+var width = document.documentElement.clientWidth;
+  if (width > 1440) {
+    iframe.style.width = width + 'px';
+    iframe.style.marginLeft = -(width/2) + 'px';
+  }
+
+window.addEventListener("resize", function (evt) {
+  var width = document.documentElement.clientWidth;
+  if (width > 1440) {
+    iframe.style.width = width + 'px';
+    iframe.style.marginLeft = -(width/2) + 'px';
+  }
+});
+
+
