@@ -1,5 +1,5 @@
 
-var button = document.querySelector(".map button");
+var button = document.querySelector(".map .write-us");
 
 var popup = document.querySelector(".modal-message");
 var close = popup.querySelector(".close-cross");
@@ -12,6 +12,10 @@ var text = popup.querySelector("[name=text]");
 var isStorageSupport = true;
 var storageName = "";
 var storageEmail = "";
+
+var iframe = document.querySelector(".map iframe");
+var width = document.documentElement.clientWidth;
+
 
 try {
   storageName = localStorage.getItem("name");
@@ -81,20 +85,17 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
-var iframe = document.querySelector(".map iframe");
 
-var width = document.documentElement.clientWidth;
 if (width > 1440) {
-  iframe.style.width = width + 'px';
-  iframe.style.marginLeft = -(width/2) + 'px';
+  iframe.style.width = width + "px";
+  iframe.style.marginLeft = -(width/2) + "px";
 }
 
 window.addEventListener("resize", function (evt) {
   var width = document.documentElement.clientWidth;
   if (width > 1440) {
-    iframe.style.width = width + 'px';
-    iframe.style.marginLeft = -(width/2) + 'px';
+    iframe.style.width = width + "px";
+    iframe.style.marginLeft = -(width/2) + "px";
   }
 });
-
 

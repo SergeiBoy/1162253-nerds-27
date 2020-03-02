@@ -52,23 +52,34 @@ img {
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.main-navigation .site-navigation {
-  margin-left: 120px;
+.navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 828px;
+}
+
+.site-navigation {
+  margin-top: 27px;
 
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
-}
-
-.main-navigation li {
-  margin-top: 7px;
+  width: 485px;
 }
 
 .site-navigation li {
-  margin-right: 46px;
+  margin-bottom: 15px;
+
+  min-width: 121px;
+
+  text-align: center;
+  
+  flex-grow: 1;
+}
+
+.main-navigation .user-navigation {
+  margin-top: 27px;
 }
 
 .user-basket {
@@ -183,6 +194,8 @@ img {
   margin-top: 27px;
   margin-bottom: 38px;
 
+  padding-right: 30px;
+
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -202,12 +215,16 @@ img {
 }
 
 .slider-text-wrapper a {
+  margin-bottom: 80px;
+
   display: block;
+  box-sizing: border-box;
   width: 240px;
-  height: 50px;
+  min-height: 50px;
+  padding: 15px;
 
   font-size: 16px;
-  line-height: 50px;
+  line-height: 20px;
   font-weight: 500;
   color: white;
   text-align: center;
@@ -1000,7 +1017,7 @@ input:disabled + label {
   color: #666666;
   text-align: center;
   
-  overflow: hidden;
+  overflow: auto;
 }
 
 .modal-order .website-order {
@@ -1044,9 +1061,10 @@ input:disabled + label {
   box-sizing: border-box;
   height: 50px;
   min-width: 50px;
+  padding: 15px;
 
   font-size: 16px;
-  line-height: 50px;
+  line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
@@ -1071,7 +1089,7 @@ input:disabled + label {
 }
 
 .page-listing a.active {
-  line-height: 45px;
+  line-height: 17px;
 
   background-color: white;
   border: 3px solid #dbdbdb;
@@ -1123,16 +1141,19 @@ input:disabled + label {
   font-weight: 700;
 }
 
-.map p {
+.map p,
+.map .tel {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+  text-transform: none;
 }
 
-.map button {
-  margin-top: 22px;
+.map .write-us {
+  margin-top: 38px;
 
+  display: block;
   width: 219px;
   height: 50px;
   
@@ -1140,10 +1161,9 @@ input:disabled + label {
   line-height: 50px;
   font-weight: 500;
   color: white;
-  text-transform: uppercase;
+  text-align: center;
   
   background-color: #fb565a;
-  border: 0;
 }
 
 .map iframe {
@@ -1160,8 +1180,8 @@ input:disabled + label {
 
 .main-footer {
   margin: 0 auto;
-  margin-top: 65px;
-  margin-bottom: 57px;
+  margin-top: 68px;
+  margin-bottom: 58px;
 
   display: flex;
   width: 1160px;

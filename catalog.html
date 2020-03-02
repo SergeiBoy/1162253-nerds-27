@@ -13,17 +13,19 @@
         <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-дизайн студии «Нёрдс»">
         </a>
-        <ul class="site-navigation">
-          <li><a href="index.html">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a class="active" href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li>
-            <a class="user-basket" href="#">Корзина</a>
-          </li>
-        </ul>
+        <div class="navigation-wrapper">
+          <ul class="site-navigation">
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="#">Клиенты</a><span>&nbsp;&nbsp;&nbsp;</span></li>
+            <li><a class="active" href="#">Магазин</a><span>&nbsp;&nbsp;</span></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li>
+              <a class="user-basket" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="container">
@@ -42,12 +44,12 @@
                 <div class="scale">
                   <div class="bar" style="margin-left: 5%; width: 62%"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="toggle toggle-min" aria-label="Минимальная цена"></div>
+                <div class="toggle toggle-max" aria-label="Максимальная цена"></div>
               </div>
               <div class="price-controls">
-                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="text" name="max-price" value="15 000"></label>
+                <label class="min-price">от <input type="text" name="min-price" value="0" aria-label="Минимальная цена"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="15 000" aria-label="Максимальная цена"></label>
               </div>
             </div>
           </fieldset>
@@ -119,7 +121,7 @@
           <ul class="catalog">
             <li class="catalog-item">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Сайт Sedona">
-              <div class="modal-order">
+              <div class="modal-order" tabindex="0">
                 <a class="website-title" href="#">Sedona</a>
                 <p>Информационный сайт для&nbsp;туристов</p>
                 <a class="website-order" href="#">9 900 РУБ.</a>
@@ -127,7 +129,7 @@
             </li> 
             <li class="catalog-item">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Сайт Pink App">
-              <div class="modal-order">
+              <div class="modal-order" tabindex="0">
                 <a class="website-title" href="#">Pink App</a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
                 <a class="website-order" href="#">9 900 РУБ.</a>
@@ -135,7 +137,7 @@
             </li>
             <li class="catalog-item">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт Barbershop">
-              <div class="modal-order">
+              <div class="modal-order" tabindex="0">
                 <a class="website-title" href="#">Barbershop</a>
                 <p>Сайт салона красоты. Для&nbsp;мужчин,&nbsp;да.</p>
                 <a class="website-order" href="#">9 900 РУБ.</a>
@@ -143,7 +145,7 @@
             </li>
             <li class="catalog-item">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Сайт Mishka">
-              <div class="modal-order">
+              <div class="modal-order" tabindex="0">
                 <a class="website-title" href="#">Mishka</a>
                 <p>Интернет-магазин вязаных&nbsp;игрушек</p>
                 <a class="website-order" href="#">9 900 РУБ.</a>
@@ -151,7 +153,7 @@
             </li>
             <li class="catalog-item">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="Сайт A Plus">
-              <div class="modal-order">
+              <div class="modal-order" tabindex="0">
                 <a class="website-title" href="#">A Plus</a>
                 <p>Лендинг курсов повышения квалификации</p>
                 <a class="website-order" href="#">9 900 РУБ.</a>
@@ -159,7 +161,7 @@
             </li>
             <li class="catalog-item">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Сайт Кваст">
-              <div class="modal-order">
+              <div class="modal-order" tabindex="0">
                 <a class="website-title" href="#">Кваст</a>
                 <p>Промо-сайт производителя крафтового кваса</p>
                 <a class="website-order" href="#">9 900 РУБ.</a>
@@ -183,8 +185,8 @@
         <div>
           <h3>NЁRDS DESIGN STUDIO</h3>
           <p>191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная,&nbsp;д.&nbsp;19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <button type="button">Напишите нам</button>
+          <p><a class="tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+          <a class="write-us" href="writeus.html">Напишите нам</a>
         </div>
         <img src="img/map.jpg" width="1440" height="416" alt="Карта как к нам проехать">
         <img src="img/map-marker.png" width="231" height="190" alt="Указатель местоположения на карте">
