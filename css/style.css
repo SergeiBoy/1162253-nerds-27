@@ -1119,7 +1119,7 @@ input:disabled + label {
   left: 820px;
 }
 
-.map div {
+.map .message {
   position: absolute;
   top: 55px;
   left: 140px;
@@ -1166,13 +1166,17 @@ input:disabled + label {
   background-color: #fb565a;
 }
 
-.map iframe {
+.map .google-map {
   position: absolute;
   top: 0;
   left: 50%;
   margin-left: -720px;
-
-  border: none;
+  z-index: -1;
+  
+  width: 1440px;
+  height: 416px;
+  
+  background: transparent;
 }
 
 

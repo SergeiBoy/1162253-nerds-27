@@ -13,7 +13,7 @@ var isStorageSupport = true;
 var storageName = "";
 var storageEmail = "";
 
-var iframe = document.querySelector(".map iframe");
+var mapAddress = document.querySelector(".map .google-map");
 var width = document.documentElement.clientWidth;
 
 
@@ -85,17 +85,29 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
+function initMap() {
+  var uluru = {lat: 59.938872, lng: 30.323047};
+  var map = new google.maps.Map(mapAddress, {zoom: 17, center: uluru});
+  var marker = new google.maps.Marker({position: uluru, map: map});
+  mapAddress.style.zIndex = 1;
+};  
+
+var script = document.createElement("script");
+script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD3BpFqzWP_ymtXwTlGLCK0ujLH9BBKCJo&callback=initMap";
+script.async = true;
+script.defer = true;
+document.body.append(script);
 
 if (width > 1440) {
-  iframe.style.width = width + "px";
-  iframe.style.marginLeft = -(width/2) + "px";
+  mapAddress.style.width = width + "px";
+  mapAddress.style.marginLeft = -(width/2) + "px";
 }
 
 window.addEventListener("resize", function (evt) {
   var width = document.documentElement.clientWidth;
   if (width > 1440) {
-    iframe.style.width = width + "px";
-    iframe.style.marginLeft = -(width/2) + "px";
+    mapAddress.style.width = width + "px";
+    mapAddress.style.marginLeft = -(width/2) + "px";
   }
 });
 
