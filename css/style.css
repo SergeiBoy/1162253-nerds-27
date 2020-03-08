@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 a {
   text-transform: uppercase;
-  color: black;
+  color: #000000;
 
   text-decoration: none;
 }
@@ -37,8 +37,6 @@ img {
 /* Навигация: */
 
 .main-header {
-  padding-top: 49px;
-
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -52,6 +50,9 @@ img {
 
   display: flex;
   justify-content: space-between;
+  padding: 49px 20px 0px;
+
+  background-color: #eeeeee;
 }
 
 .navigation-wrapper {
@@ -65,17 +66,26 @@ img {
 
   display: flex;
   flex-wrap: wrap;
-  width: 485px;
+  width: 484px;
 }
 
 .site-navigation li {
   margin-bottom: 15px;
 
   min-width: 121px;
+  box-sizing: border-box;
 
   text-align: center;
-  
+
   flex-grow: 1;
+}
+
+.site-navigation li:nth-child(2) {
+  padding-right: 10px;
+}
+
+.site-navigation li:nth-child(3) {
+  padding-right: 5px;
 }
 
 .main-navigation .user-navigation {
@@ -90,11 +100,11 @@ img {
 
 .user-basket::before {
   content: "";
-  
+
   position: absolute;
   top: 2px;
   left: 0px;
-  
+
   width: 15px;
   height: 15px;
 
@@ -109,11 +119,11 @@ img {
 
 .main-navigation .active::after {
   content: "";
-  
+
   position: absolute;
   top: 28px;
   left: 0px;
-  
+
   width: 100%;
   height: 2px;
 
@@ -149,6 +159,9 @@ img {
 
   width: 1160px;
   margin: 0 auto;
+  padding: 0px 20px;
+
+  background-color: #eeeeee;
 }
 
 .slider-slide-wrapper {
@@ -226,9 +239,10 @@ img {
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
-  color: white;
+  color: #ffffff;
   text-align: center;
-  
+
+  border-radius: 3px;
   background-color: #fb565a;
 }
 
@@ -246,9 +260,9 @@ img {
 .slider-controls {
   position: absolute;
   top: 306px;
-  left: 536px;
+  left: 556px;
   z-index: 10;
-  
+
   display: flex;
   justify-content: space-between;
   width: 88px;
@@ -262,7 +276,7 @@ img {
   width: 18px;
   height: 18px;
 
-  background-color: white;  
+  background-color: #ffffff;  
   border-radius: 50%;
 }
 
@@ -296,12 +310,13 @@ img {
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 1160px;
+  padding: 0px 20px;
 }
 
 .landing-list li {
   margin-right: 100px;
   margin-bottom: 80px;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -344,8 +359,10 @@ img {
   font-size: 16px;
   line-height: 50px;
   font-weight: 500;
-  color: white;
+  color: #ffffff;
   text-align: center;
+
+  border-radius: 3px;
 }
 
 .landing .button-red {
@@ -397,13 +414,13 @@ img {
 /* Краткое описание компании */
 
 .short-company-description {
+  position: relative;
   margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
   width: 1160px;
-  
-  border-top: 2px solid #eeeeee;
+  padding: 0px 20px;
 }
 
 .text-description {
@@ -411,7 +428,7 @@ img {
 }
 
 .text-description h3 {
-  margin-top: 74px;
+  margin-top: 76px;
   margin-bottom: 35px;
 
   font-size: 45px;
@@ -449,11 +466,11 @@ img {
 
 .we-do-orders li::before {
   content: "";
-  
+
   position: absolute;
   top: 0px;
   left: 0px;
-  
+
   width: 25px;
   height: 40%;
 
@@ -462,7 +479,7 @@ img {
 
 .image-numbers-description {
   width: 360px;
-  padding-top: 40px;
+  padding-top: 42px;
 }
 
 .image-numbers-description > p {
@@ -503,19 +520,31 @@ img {
   color: #283136;
 }
 
+.short-company-description::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 20px;
+
+  width: 1160px;
+  height: 2px;
+
+  background-color: #eeeeee;
+}
+
 
 /* Логотипы компаний */
 
 .companies-logo {
+  position: relative;
   margin: 0 auto;
   margin-top: 58px;
   margin-bottom: 80px;
 
   width: 1160px;
   min-height: 180px;
-
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
+  padding: 0px 20px;
 }
 
 .list-companies-logo {
@@ -525,8 +554,8 @@ img {
 
 .list-companies-logo li {
   position: relative;
-  margin-top: 43px;
-  margin-bottom: 43px;
+  margin-top: 45px;
+  margin-bottom: 45px;
 
   display: flex;
   justify-content: center;
@@ -546,11 +575,11 @@ img {
 
 .list-companies-logo li::after {
   content: "";
-  
+
   position: absolute;
   top: 20px;
   right: 0px;
-  
+
   width: 2px;
   height: 52px;
 
@@ -597,13 +626,39 @@ img[src="img/mishka-logo.png"] {
   left: 10px;
 }
 
+.companies-logo::before {
+  content: "";
+
+  position: absolute;
+  top: 0px;
+  left: 20px;
+
+  width: 1160px;
+  height: 2px;
+
+  background-color: #eeeeee;
+}
+
+.companies-logo::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+
+  width: 1160px;
+  height: 2px;
+
+  background-color: #eeeeee;
+}
+
 
 /* Фильтр шаблонов сайтов */
 
 .filter-item {
   margin: 0;
   padding: 0;
-  
+
   border: none;
 }
 
@@ -632,7 +687,7 @@ img[src="img/mishka-logo.png"] {
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  
+
   background-color: #f1f1f1;
   border-radius: 5px;
 }
@@ -654,7 +709,7 @@ img[src="img/mishka-logo.png"] {
   position: absolute;
   top: 31px;
   left: 0px;
-  
+
   width: 4px;
   height: 4px;
   padding: 0;
@@ -683,7 +738,7 @@ img[src="img/mishka-logo.png"] {
   display: inline-block;
   vertical-align: top;
   width: 50%;
-  
+
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -693,14 +748,14 @@ img[src="img/mishka-logo.png"] {
 
   width: 60px;
   padding: 8px 10px;
-  
+
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   text-align: center;
   color: #283136;
-  
+
   border: none;
   border-radius: 5px;
   background-color: #f1f1f1;
@@ -748,11 +803,11 @@ img[src="img/mishka-logo.png"] {
 
 .radio-input + label::before {
   content: "";
-  
+
   position: absolute;
   top: 0px;
   left: 0px;
-  
+
   width: 9px;
   height: 9px;
   padding: 4px;
@@ -764,11 +819,11 @@ img[src="img/mishka-logo.png"] {
 
 .checkbox-input + label::before {
   content: "";
-  
+
   position: absolute;
   top: 0px;
   left: 0px;
-  
+
   width: 28px;
   height: 23px;
 
@@ -807,8 +862,9 @@ input:disabled + label {
   font-weight: 500;
   text-transform: uppercase;
 
-  background-color: #eeeeee;
   border: 0;
+  border-radius: 3px;
+  background-color: #eeeeee;
 }
 
 .filter .filter-button:hover,
@@ -877,7 +933,7 @@ input:disabled + label {
 
 .sorting a:active,
 .sorting a.active {
-  color: black;
+  color: #000000;
 
   opacity: 1;
 }
@@ -903,11 +959,13 @@ input:disabled + label {
   justify-content: center;
   width: 1160px;
   min-height: 163px;
-  padding-top: 68px;
+  padding: 68px 20px 0px;
 
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+
+  background-color: #eeeeee;
 }
 
 .wrapper-catalog {
@@ -916,6 +974,7 @@ input:disabled + label {
 
   display: flex;
   justify-content: space-between;
+  padding: 0px 20px;
 }
 
 .website-templates {
@@ -939,11 +998,11 @@ input:disabled + label {
 
 .catalog-item::before {
   content: "";
-  
+
   position: absolute;
   top: 0px;
   left: 0px;
-  
+
   width: 360px;
   height: 40px;
 
@@ -1010,13 +1069,13 @@ input:disabled + label {
 
   width: 240px;
   max-height: 390px;
-  
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #666666;
   text-align: center;
-  
+
   overflow: auto;
 }
 
@@ -1030,9 +1089,10 @@ input:disabled + label {
   font-size: 16px;
   line-height: 50px;
   font-weight: 500;
-  color: white;
+  color: #ffffff;
   text-align: center;
 
+  border-radius: 3px;
   background-color: #fb565a;
 }
 
@@ -1069,6 +1129,7 @@ input:disabled + label {
   text-transform: uppercase;
   text-align: center;
 
+  border-radius: 3px;
   background-color: #eeeeee;
 }
 
@@ -1091,7 +1152,7 @@ input:disabled + label {
 .page-listing a.active {
   line-height: 17px;
 
-  background-color: white;
+  background-color: #ffffff;
   border: 3px solid #dbdbdb;
 }
 
@@ -1102,27 +1163,31 @@ input:disabled + label {
   position: relative;
   margin: 0 auto;
 
-  width: 1440px;
+  width: 1200px;
+  height: 416px;
 }
 
-.map img:first-of-type {
-  display: block;
+.map .map-wrapper {
+  position: absolute;
+  top: 0px;
+  left: -120px;
+
   width: 1440px;
   height: 416px;
 
   background-color: #eeeeee;
 }
 
-.map img:nth-of-type(2) {
+.map .marker {
   position: absolute;
   top: 90px;
-  left: 820px;
+  left: 700px;
 }
 
 .map .message {
   position: absolute;
   top: 55px;
-  left: 140px;
+  left: 20px;
   z-index: 10;
 
   box-sizing: border-box;
@@ -1130,7 +1195,7 @@ input:disabled + label {
   min-height: 308px;
   padding: 30px 50px;
 
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .map h3 {
@@ -1156,13 +1221,14 @@ input:disabled + label {
   display: block;
   width: 219px;
   height: 50px;
-  
+
   font-size: 16px;
   line-height: 50px;
   font-weight: 500;
-  color: white;
+  color: #ffffff;
   text-align: center;
-  
+
+  border-radius: 3px;
   background-color: #fb565a;
 }
 
@@ -1170,13 +1236,13 @@ input:disabled + label {
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -720px;
+  margin-left: -600px;
   z-index: -1;
-  
-  width: 1440px;
+
+  width: 1200px;
   height: 416px;
-  
-  background: transparent;
+
+  background: #eeeeee;
 }
 
 
@@ -1189,6 +1255,7 @@ input:disabled + label {
 
   display: flex;
   width: 1160px;
+  padding: 0px 20px;
 }
 
 .social-icons {
@@ -1220,9 +1287,9 @@ input:disabled + label {
 
 .social-icons a::before {
   content: "";
-  
+
   display: block;
-  
+
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1295,10 +1362,10 @@ input:disabled + label {
   width: 960px;
   height: 590px;
   padding: 67px 50px 70px 100px;
-  
-  background-color: white;
+
+  background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-  
+
   transform: translateY(-2000px);
 }
 
@@ -1333,7 +1400,7 @@ input:disabled + label {
 
   font-size: 0;
 
-  background-color: white;
+  background-color: #ffffff;
   background-image: url("../img/close-cross.svg");
   border: 0;
   opacity: 0.3;
@@ -1437,11 +1504,12 @@ input:disabled + label {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
 
-  background-color: #fb565a;
   border: 0;
+  border-radius: 3px;
+  background-color: #fb565a;
 }
 
 @keyframes bounce {

@@ -14,6 +14,7 @@ var storageName = "";
 var storageEmail = "";
 
 var mapAddress = document.querySelector(".map .google-map");
+var mapWrapper = document.querySelector(".map .map-wrapper");
 var width = document.documentElement.clientWidth;
 
 
@@ -64,8 +65,8 @@ form.addEventListener("submit", function (evt) {
     popup.classList.add("modal-message-error");
   } else {
     if (isStorageSupport) {
-	  localStorage.setItem("name", personName.value);
-	  localStorage.setItem("email", email.value);
+      localStorage.setItem("name", personName.value);
+      localStorage.setItem("email", email.value);
     }
   }
 });
@@ -90,6 +91,7 @@ function initMap() {
   var map = new google.maps.Map(mapAddress, {zoom: 17, center: uluru});
   var marker = new google.maps.Marker({position: uluru, map: map});
   mapAddress.style.zIndex = 1;
+  mapWrapper.style.display = "none";
 };  
 
 var script = document.createElement("script");
@@ -98,16 +100,19 @@ script.async = true;
 script.defer = true;
 document.body.append(script);
 
-if (width > 1440) {
+if (width > 1200) {
   mapAddress.style.width = width + "px";
   mapAddress.style.marginLeft = -(width/2) + "px";
 }
 
 window.addEventListener("resize", function (evt) {
   var width = document.documentElement.clientWidth;
-  if (width > 1440) {
+  if (width > 1200) {
     mapAddress.style.width = width + "px";
     mapAddress.style.marginLeft = -(width/2) + "px";
+  } else {
+    mapAddress.style.width = "1200px";
+    mapAddress.style.marginLeft = "-600px";
   }
 });
 
