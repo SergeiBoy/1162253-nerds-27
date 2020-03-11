@@ -92,13 +92,13 @@ function initMap() {
   var marker = new google.maps.Marker({position: uluru, map: map});
   mapAddress.style.zIndex = 1;
   mapWrapper.style.display = "none";
-};  
+};
 
 var script = document.createElement("script");
 script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD3BpFqzWP_ymtXwTlGLCK0ujLH9BBKCJo&callback=initMap";
 script.async = true;
 script.defer = true;
-document.body.append(script);
+document.body.appendChild(script);
 
 if (width > 1200) {
   mapAddress.style.width = width + "px";
